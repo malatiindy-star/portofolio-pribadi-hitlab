@@ -1,0 +1,28 @@
+
+/* ===== TEMA CUTE CAT CAFE ===== */
+
+:root {
+    --navy: #244A73;
+    --sky-blue: #568DBB;
+    --pale-blue: #B7D3EA;
+    --mocha: #936F56;
+    --beige: #D6B998;
+    --cream: #F3E6D4;
+    --white: #FFFFFF;
+    --text-color: #3E3A36;
+}
+
+/* Pengaturan dasar seluruh halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+    color: var(--text-color);
+    line-height: 1.7;
+}

@@ -26,3 +26,284 @@ body {
     color: var(--text-color);
     line-height: 1.7;
 }
+
+/* ===== NAVBAR ===== */
+
+nav {
+    background-color: var(--navy);
+    padding: 16px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--beige);
+    transform: translateY(-2px);
+}
+/* ===== HEADER / PROFILE ===== */
+
+header {
+    background-color: var(--sky-blue);
+    color: var(--navy);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--beige);
+    margin-top: 10px;
+}
+/* ===== MAIN CONTENT ===== */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ===== SECTION CARD ===== */
+
+main section {
+    background-color: var(--white);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 2px solid var(--beige);
+    box-shadow: 0 4px 10px rgba(62, 58, 54, 0.08);
+}
+
+/* Judul Section */
+
+main section h2 {
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Paragraf */
+
+main section p {
+    margin-bottom: 10px;
+}
+/* ===== CARD HOVER ===== */
+
+main section {
+    transition: 0.3s ease;
+}
+
+main section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(62, 58, 54, 0.15);
+}
+/* ===== SKILLS TABLE ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+th {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid var(--beige);
+}
+
+tr:nth-child(even) {
+    background-color: var(--cream);
+}
+
+tr:hover {
+    background-color: var(--pale-blue);
+    transition: 0.2s;
+}
+/* ===== CONTACT FORM ===== */
+
+#contact form {
+    margin-top: 15px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid var(--pale-blue);
+    border-radius: 10px;
+    background-color: var(--cream);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: var(--sky-blue);
+    background-color: var(--white);
+}
+
+#contact textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact button {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background-color: var(--mocha);
+    transform: translateY(-2px);
+}
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: var(--mocha);
+    color: var(--cream);
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* ===== PROJECT CARDS ===== */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.project-card {
+    background-color: var(--cream);
+    border: 2px solid var(--beige);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.project-card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: auto;
+    background-color: var(--navy);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background-color: var(--mocha);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(62, 58, 54, 0.15);
+}
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 0 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    main section {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 18px;
+        padding: 14px 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+}
